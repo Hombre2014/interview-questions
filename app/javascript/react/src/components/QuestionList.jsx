@@ -23,7 +23,7 @@ const QuestionList = () => {
   const [isShowAlert, setIsShowAlert] = useState(false)
   const [isShowLoader, setIsShowLoader] = useState(true)
 
-  const questionsUrl = '/api/v1/questions'
+  const questionsUrl = 'https://interview-questions-production.up.railway.app/api/v1/questions'
   
   const fetchQuestionList = () => {
     setIsShowLoader(false)
