@@ -16,9 +16,6 @@ const Answer = (question) => {
 
   const handleAnswerSubmit = (event) => {
     event.preventDefault();
-    console.log('Answer is: ', answer);
-    console.log('Question is: ', question);
-    console.log('Question ID is: ', id);
     createAnswer({answer: answer});
   }
 
@@ -61,7 +58,6 @@ const Answer = (question) => {
               </div>
             </div>
             <div className="modal-footer">
-              {/* <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button> */}
               <button type="submit" className="btn btn-primary" data-bs-dismiss="modal">Answer question</button>
             </div>
           </form>

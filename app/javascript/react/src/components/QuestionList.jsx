@@ -52,7 +52,6 @@ const QuestionList = () => {
     fetch(questionsUrl + `?tags=${questionsTags[event.target.value].label}`)
       .then((response) => response.json())
       .then((data) => {
-        console.log(data)
         setQuestionsList(data)
         if(data.length == 0) {
           setIsShowAlert(true)
